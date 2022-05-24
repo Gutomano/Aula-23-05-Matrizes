@@ -1,0 +1,23 @@
+import java.util.Scanner;
+class HelloWorld 
+{
+    public static void main(String[] args) 
+    {
+     Scanner ler = new Scanner (System.in);
+     int l,c,m[][] = new int[16][16];
+     for (l = 0; l < 16; l ++){System.out.printf("Informe os elementos %da, linha: \n", (l+1));
+         for (c = 0; c < 16; c++){
+             System.out.printf("m[%d][%d] = ",l,c);
+             m[l][c] = ler.nextInt();
+         }
+         System.out.printf(" \n ");
+     }     
+     System.out.printf("\n");
+     for (l = 0; l < 16; l++);{
+         System.out.printf("%da, linha: ",(l+1));
+     for (c = 0; c < 16; c++){
+         System.out.printf("%d ",m[l][c]);
+     }
+     }
+    }
+}
