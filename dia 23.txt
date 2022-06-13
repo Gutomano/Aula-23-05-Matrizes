@@ -1,22 +1,51 @@
+
 import java.util.Scanner;
+//importação de uma biblioteca 
+
 class HelloWorld 
 {
     public static void main(String[] args) 
+    
     {
      Scanner ler = new Scanner (System.in);
-     int l,c,m[][] = new int[16][16];
-     for (l = 0; l < 16; l ++){System.out.printf("Informe os elementos %da, linha: \n", (l+1));
-         for (c = 0; c < 16; c++){
+     //criação de uma variavel para fazer a leitura dos números 
+     
+     int l,c,m[][] = new int[10][10];
+     //criação das variaveis 
+     
+     for (l = 0; l < 10; l ++){System.out.printf("Informe seu nome: \n", (l+1));
+     //criação de variaveis  de codigos e recebitor de dados 
+     
+     
+         for (c = 0; c < 10; c++)
+         // atividade de coluna e linha 
+         
+         {
              System.out.printf("m[%d][%d] = ",l,c);
+             //leitor de linha e coluna 
+             
              m[l][c] = ler.nextInt();
          }
          System.out.printf(" \n ");
+         // serve para pular linha e ir para a proxima linha 
+         
      }     
      System.out.printf("\n");
-     for (l = 0; l < 16; l++);{
+     // serve para pular linha e ir para a ´próxima linha 
+     
+     for (l = 0; l < 10; l++);
+     // recebr e enfilerar linhas e colunas
+     
+     {
          System.out.printf("%da, linha: ",(l+1));
-     for (c = 0; c < 16; c++){
+         // receber dados de linhas e colunas  
+         
+     for (c = 0; c < 10; c++)
+     // recer e enfilerar linhas e colunas 
+     
+     {
          System.out.printf("%d ",m[l][c]);
+         //o que sera apresentado na tela 
      }
      }
     }
